@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 183, 86);
+}
+
+
+.calender {
+    background-color: black;
+    color: aliceblue;
+    width: 500px;
+    height: 600px;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.date {
+    background-color: #e81123;
+    width: 100%;
+    height: 130px;
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date span {
+    margin: 30px;
+    padding: 10px;
+}
+
+.data {
+    text-align: center;
+    width: 100%;
+}
+
+.date h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.weekday {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.weekday div {
+    letter-spacing: 1px;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(128, 128, 128, 0);
+}
+
+.weekday div:hover {
+    border: 2px solid grey;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px;
+}
+
+.active {
+    background-color: #e81123;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.empty {
+    color: #e81123;
+}
+
+.days div {
+    font-size: 14px;
+    margin: 3px;
+    width: 61px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(128, 128, 128, 0);
+    border-radius: 5px;
+}
+
+.days div:hover:not(.empty) {
+    border: 2px solid grey;
+}
+
+#prev:hover {
+    background-color: rgba(240, 248, 255, 0.329);
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+#next:hover {
+    background-color: rgba(240, 248, 255, 0.329);
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    transition: background-color 1s;
+}
